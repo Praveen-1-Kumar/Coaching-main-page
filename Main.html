@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mission Coaching Center -Test Series</title>
+    <link rel="stylesheet" href="../Css files/Main.css" type="text/css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Karma:wght@300&family=Lora:ital@1&family=Poppins:ital,wght@1,100&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <nav id="nav-bar">
+
+        <div class="upper-nav">
+            <ul class="nav-list">
+                <li class="li"><a href="Main.html"> Home </a> </li>
+                <li class="li"><a href="Main.html"> Contact us</a> </li>
+                <li class="li"><a href="Main.html"> Gallery</a> </li>
+                <li class="li"><a href="Register.html"> Register</a> </li>
+ <li class="li">
+    
+       <div id="clock-container" style="display:flex; align-items: center; ; justify-content: center; ">
+       
+         <span id="clockh" style="font-size: 50px;"> </span>
+         <span  style="font-size: 50px;  padding-bottom: 10px;" >:</span>
+         <span id="clockm" style="font-size: 50px; "> </span> 
+         <span style="font-size: 50px;  padding-bottom: 10px;" >:</span>
+         <span id="clocks" style="font-size: 50px; "> </span>
+       
+    
+      </div>
+ </li>
+                
+            </ul>
+        </div>
+
+
+
+    </nav>
+    <div id="banner">
+        <div id="ban-heading">
+            <h2>MISSION COACHING CENTER</h2>
+            <h2> AMBEHTA CHAND</h2>
+        </div>
+
+        <div id="sub-card-container">
+            <div class="sub-card">
+                <h2> UP Constable</h2>
+                <ul class="sub-desc">
+                    <li>All Subjects </li>
+                    <li>Pdf Notes</li>
+                </ul>
+            </div>
+            <div class="sub-card">
+                <h2>SSC CGL </h2>
+                <ul class="sub-desc">
+                    <li>All Subjects </li>
+                    <li>Pdf Notes</li>
+                </ul>
+            </div>
+            <div class="sub-card">
+                <h2> SSC CHSL</h2>
+                <ul class="sub-desc">
+                    <li>All Subjects </li>
+                    <li>Pdf Notes</li>
+                </ul>
+            </div>
+            <div class="sub-card">
+                <h2>SSC MTS</h2>
+                <ul class="sub-desc">
+                    <li>All Subjects </li>
+                    <li>Pdf Notes</li>
+                </ul>
+            </div>
+            <div class="sub-card">
+                <h2>SSC GD</h2>
+                <ul class="sub-desc">
+                    <li>All Subjects </li>
+                    <li>Pdf Notes</li>
+                </ul>
+            </div>
+            <div class="sub-card">
+                <h2>UP SI</h2>
+                <ul class="sub-desc">
+                    <li>All Subjects </li>
+                    <li>Pdf Notes</li>
+                </ul>
+            </div>
+
+        </div>
+
+
+    </div>
+
+        
+   
+
+    <footer>
+        <div class="container">
+
+            <div class="Sub-d">
+                <h4>Information</h4>
+                <div class="footer-desc">
+                    <p><a href="Main.html">About Us</a></p>
+                   
+                </div>
+            </div>
+
+            <div class="Sub-d">
+                <h4>My Account</h4>
+                <div class="footer-desc">
+                    <p style="display: flex;align-items: center;"><span class="material-icons"> &nbsp;login </span><a >Login</a></p>
+                </div>
+            </div>
+            <div class="Sub-d">
+                <h4>Contact Us</h4>
+                <div class="footer-desc">
+                    <p style="display: flex;align-items: center;"><span class="material-icons"> &nbsp; call </span> +91-123-4567890</p>
+                    <p style="display: flex;align-items: center;"><span class="material-icons">&nbsp; email </span> Spicy_Bites@gmail.com</p>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+</body>
+<script >
+    var second=1;
+    var min=0;
+    var hour=0;
+ var cidh=document.getElementById("clockh");
+ var cidm=document.getElementById("clockm");
+ var cids=document.getElementById("clocks");
+ 
+var timeout=setInterval(timecount,1000);
+
+
+
+function timecount(){    
+  second=second+1;
+  if((second%60)==0){
+     min=min+1;
+     second=1;
+    }
+    
+   if(((min%60)==0)&&(min!=0)){
+      hour=hour+1;
+      min=0;
+      second=1;
+   }
+
+ 
+cidh.innerText=hour;
+cidm.innerText=min;
+cids.innerText=second;
+}
+
+
+</script>
+
+</html>

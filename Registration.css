@@ -1,0 +1,123 @@
+
+
+
+/*   login page and Registration page css code    */
+
+body{
+  background-color: #c6ced6;
+}
+#form-container{
+  width: 40%;
+ /* border: 1px solid black;  */ 
+  margin: 30px auto;
+  display: block;
+  background-color: #ffffff;
+  border-radius: 2%;
+  box-shadow: 10px 10px 12px #b3c4d8;
+  padding: 5px 10px;
+  padding-top: 5px;
+
+}
+
+#form{
+    width:80%;
+    padding: 0.4em 1em;
+  /*  border: 5px solid black;  */
+    display: flex;
+    margin: 20px auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#h{
+    font-size: 45px;
+    text-align: center;
+    margin-bottom: 15px;
+    text-shadow: 2px 0px red;
+}
+
+
+.Text_Area_Design{
+     display: inline;
+     margin: 5px 2px;
+     height: 1.5em;
+     padding: 4px 5px;    
+     width: 90%;
+}
+
+.btn{
+      width: 80%;
+      background-color: rgb(12, 99, 231);
+      box-shadow: 1px 1px 20px 2px #79ace6;
+      padding:  5px 2px;
+      font-size: larger;
+      color:#EFECE9;
+      margin: 10px auto;
+  }
+   .btn:hover {
+    box-shadow: 1px 1px 20px 10px #dadee2;
+  
+  }
+
+
+
+/*this css code used for  pop-up menu if we enter wrong email or password */
+
+#pop-container{
+ 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: none;
+  }
+  .pop-display{
+  
+  margin: 5px 5px;
+  padding: 15px 5px;
+  height:fit-content;
+  width: 45vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: yellow;
+  border: 2px solid rgba(56, 93, 71, 0.5);
+    background-color: rgb(221, 25, 25);
+   border-radius: 10px;
+  border-bottom-right-radius:35px;
+  position: absolute;
+  top :5vw;
+  left: 30vw;
+  z-index: 1;
+  
+  }
+  .btn-cl{
+  
+    padding: 2px 15px ;
+    margin-top: 15px;
+    width: 25%;
+
+  }
+  @media screen and (max-width: 700px) {
+
+    #form-container{
+      width: 85%;
+     /* border: 5px solid black;    */
+      margin: 20px auto;
+      display: block;
+      background-color: rgba(179,196,216, 0.5);
+      border-radius: 2%;
+      box-shadow: 0px -4px 25px 13px #b3c4d8;
+      padding: 5px 10px;
+      padding-top: 5px;
+    
+    }
+    
+
+
+
+  }

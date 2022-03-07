@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mission Coaching Center -Test Series</title>
+    <link rel="stylesheet" href="../Css files/Main.css" type="text/css">
+    <link rel="stylesheet" href="../Css files/Registration.css" type="text/css">
+ 
+</head>
+
+<body >
+    <nav id="nav-bar">
+
+        <div class="upper-nav">
+             <ul class="nav-list">
+                <li class="li"><a href="Main.html"> Home </a> </li>
+                <li class="li"><a href="Main.html"> Contact us</a> </li>
+                <li class="li"><a href="Main.html"> Gallery</a> </li>
+                <li class="li"><a href="Register.html"> Register</a> </li>
+                <li class="li"><a href="../php files/login.php"> Login</a> </li>
+            </ul>
+        </div>
+
+
+    </nav>
+
+
+    <section>
+
+        <div id="form-container">
+            <h2 id="h"> Registration Form</h2>
+        <div>
+            <form id="form" action="../php files/Register.php" target="" method="POST" enctype="multipart/form-data">
+      
+                <input type="text " name="Name" autocomplete="on" id="Name" class="Text_Area_Design" placeholder="Name">
+                <input type="text " name="Fname" id="Father's name" class="Text_Area_Design" placeholder="Father's name">
+                <input list="Gender" class="Text_Area_Design" placeholder="Select your Gender">
+                <datalist id="Gender">
+                    <option value="Male">
+                    <option value="Female">
+                </datalist>
+                <input type="email" name="Email" id="email" class="Text_Area_Design" placeholder=" Email">
+                <input type="tel" name="mobile" id="mobile" maxlength="10" class="Text_Area_Design" placeholder="Mobile No.">
+                <input type="password" name="Password" id="mobile" class="Text_Area_Design" maxlength="8" placeholder=" Password">
+                <input type="file" name="Photo" id="mobile" class="Text_Area_Design" accept="image/*" placeholder=" Photo">
+                <button class="btn">Submit </button>
+        
+
+            </form>
+        </div>
+        </div>
+
+
+    </section>
+
+   
+    <footer>
+        <div class="container">
+
+            <div class="Sub-d">
+                <h4>Information</h4>
+                <div class="footer-desc">
+                    <p><a href="Main.html">About Us</a></p>
+                   
+                </div>
+            </div>
+
+            <div class="Sub-d">
+                <h4>My Account</h4>
+                <div class="footer-desc">
+                    <p style="display: flex;align-items: center;"><span class="material-icons"> &nbsp;login </span><a href="../php files/login.php">Login</a></p>
+                </div>
+            </div>
+            <div class="Sub-d">
+                <h4>Contact Us</h4>
+                <div class="footer-desc">
+                    <p style="display: flex;align-items: center;"><span class="material-icons"> &nbsp; call </span> +91-123-4567890</p>
+                    <p style="display: flex;align-items: center;"><span class="material-icons">&nbsp; email </span> Spicy_Bites@gmail.com</p>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+</body>
+
+</html>
